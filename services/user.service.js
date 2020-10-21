@@ -9,7 +9,6 @@ class UserService {
         user => new User(user)
       );
       this.currentPage = parseInt(localStorage.getItem("currentPage")) || 0;
-      this.initialState = true;
     }
   
     bindUserListChanged(callback) {
